@@ -12,7 +12,7 @@ First, setup OAuth htpasswd Identity provider in the OpenShift cluster. Start cr
 htpasswd -cb htpasswd ${USERNAME} ${PASSWORD}
 ```
 
-Then go to OpenShift web console: administration-cluster-configuration and add htpasswd provider with pasted file content (or do it in cli: create secret with htaccess file content and oc edit oauth cluster adding the authProvider).
+Then go to OpenShift web console: administration-cluster settings-configuration OAuth and add htpasswd identity provider with pasted htpasswd file content (or do it in cli: create secret with htaccess file content and oc edit oauth cluster adding the authProvider, example yaml attached).
 
 
 Next, create forklift-nonadmin role (yaml specified in an attached file)
