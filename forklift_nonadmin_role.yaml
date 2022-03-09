@@ -25,6 +25,7 @@ rules:
   - '*'
 - apiGroups:
   - forklift.konveyor.io
+#  - v2v.kubevirt.io
   resources:
   - '*'
   verbs:
